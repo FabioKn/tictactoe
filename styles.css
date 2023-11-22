@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e3f2fd;
+}
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#ticTacToeCanvas {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  /* Zentrieren des Canvas und Größe anpassen */
+  display: block; /* Stellt sicher, dass das Canvas nicht in der Zeile fließt */
+  width: 400px; /* Oder eine andere Größe, die Sie bevorzugen */
+  height: 400px;
+}
+#resetButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#resetButton:hover {
+  background-color: #1e88e5;
+}
+#message {
+  margin-top: 10px;
+  color: #ff3d00;
+}
+
+#playerDisplay, #winsDisplay {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.highlight {
+  animation: highlightAnimation 1s ease-in-out infinite;
+  color: #ff0000;
+}
+
+@keyframes highlightAnimation {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+
+#nameInput {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+
+#resetWinsButton {
+  margin-bottom: 10px;
+}
